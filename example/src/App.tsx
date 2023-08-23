@@ -7,8 +7,9 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+    multiply(5, 7).then(setResult);
+
+  }, [result]);
 
   return (
     <View style={styles.container}>
