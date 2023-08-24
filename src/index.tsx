@@ -31,7 +31,7 @@ class LoggerObject {
       .catch((err) => {
         console.log(err.message);
       });
-    console.log(this.format('debug', message));
+    // console.log(this.format('debug', message));
   }
 
   info(message: string): void {
